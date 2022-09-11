@@ -51,7 +51,6 @@ table {
 .section {
   max-width: 600px;
   margin: 0 auto;
-  background-color: #ec0f0f;
 }
 
 .section .preview {
@@ -109,5 +108,193 @@ table {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url(../fonts/helvetica_bold.ttf);
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url(../fonts/helvetica_light.ttf);
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url(../fonts/helvetica_regular.ttf);
+}
+
+.info {
+  margin-top: 40px;
+}
+
+.info__txt {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.card__title {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  color: #242322;
+}
+
+.card__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__card1 {
+  max-width: 261px;
+  margin-right: 18px;
+}
+
+.card__name {
+  margin-top: 10px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #242322;
+}
+
+.card__name__info {
+  width: 247px;
+  margin-top: 16px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #5a5a5a;
+}
+
+.card__price1 {
+  margin-top: 18px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #242322;
+}
+
+.card__price2 {
+  margin-top: 18px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #939393;
+}
+
+.card__but {
+  background: none;
+  margin-top: 12px;
+  display: block;
+  border: 1px solid #32120d;
+}
+
+.card__but__txt {
+  padding: 11px 33px 8px 34px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #32120d;
+}
+
+.card__list {
+  margin-top: 30px;
+  padding: 17px 39px 12px 40px;
+  background: #32120d;
+  border: 1px solid #32120d;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.line {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 600px;
+  height: 1px;
+  background: #dcdcdc;
+}
+
+.icon {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.txt {
+  margin-bottom: 20px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #32120d;
+}
+
+.txt:last-child {
+  margin-bottom: 28px;
+}
+
+.footer {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #beb1ae;
+}
+
+.link {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: #beb1ae;
+}
+
+.link a {
+  color: #beb1ae;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,45 @@
+.icon {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.txt {
+  margin-bottom: 20px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #32120d;
+}
+.txt:last-child {
+  margin-bottom: 28px;
+}
+
+.footer {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #beb1ae;
+}
+
+.link {
+      font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration-line: none;
+  color: #beb1ae;
+
+  a {
+    color: #beb1ae;
+    
+  }
+}

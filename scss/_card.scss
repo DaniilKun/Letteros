@@ -1,0 +1,111 @@
+.card {
+  &__title {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color: #242322;
+  }
+
+  &__cards {
+    display: flex;
+  }
+
+  &__card1 {
+    max-width: 261px;
+    margin-right: 18px;
+  }
+
+  &__name {
+    margin-top: 10px;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #242322;
+
+    &__info {
+      width: 247px;
+      margin-top: 16px;
+      font-family: "Helvetica";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #5a5a5a;
+    }
+  }
+
+  &__price1 {
+    margin-top: 18px;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #242322;
+  }
+
+  &__price2 {
+    margin-top: 18px;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #939393;
+  }
+
+  &__but {
+    background: none;
+    margin-top: 12px;
+    display: block;
+    border: 1px solid #32120d;
+
+    &__txt {
+      padding: 11px 33px 8px 34px;
+      font-family: "Helvetica";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #32120d;
+    }
+  }
+
+  &__list {
+    margin-top: 30px;
+    padding: 17px 39px 12px 40px;
+    background: #32120d;
+    border: 1px solid #32120d;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
+
+.line {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 600px;
+  height: 1px;
+  background: #dcdcdc;
+}
