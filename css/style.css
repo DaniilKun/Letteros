@@ -57,6 +57,7 @@ table {
   background-image: url(../img/fon.png);
   background-repeat: no-repeat;
   height: 823px;
+  background-position: center center;
 }
 
 .section .preview__logo {
@@ -94,10 +95,8 @@ table {
   margin: 0 auto;
   display: block;
   margin-top: 21px;
+  cursor: pointer;
   border: 1px solid #ffffff;
-}
-
-.section .preview__buttxt {
   padding: 17px 36px 12px;
   font-family: "Helvetica";
   font-style: normal;
@@ -108,6 +107,13 @@ table {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.section .preview__but:active {
+  border: 1px solid #f80404;
+  color: #f80404;
 }
 
 @font-face {
@@ -139,7 +145,18 @@ table {
   color: #000000;
 }
 
-.card__title {
+@media screen and (max-width: 840px) {
+  .info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 500px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+.order__title {
   margin-top: 40px;
   margin-bottom: 30px;
   font-family: "Helvetica";
@@ -151,18 +168,21 @@ table {
   color: #242322;
 }
 
-.card__cards {
+.order__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.card__card1 {
-  max-width: 261px;
-  margin-right: 18px;
+@media (max-width: 840px) {
+  .order__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-.card__name {
+.order__item-name {
   margin-top: 10px;
   font-family: "Helvetica";
   font-style: normal;
@@ -173,8 +193,7 @@ table {
   color: #242322;
 }
 
-.card__name__info {
-  width: 247px;
+.order__item-info {
   margin-top: 16px;
   font-family: "Helvetica";
   font-style: normal;
@@ -185,7 +204,7 @@ table {
   color: #5a5a5a;
 }
 
-.card__price1 {
+.order__item-price {
   margin-top: 18px;
   font-family: "Helvetica";
   font-style: normal;
@@ -196,25 +215,13 @@ table {
   color: #242322;
 }
 
-.card__price2 {
-  margin-top: 18px;
-  font-family: "Helvetica";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: #939393;
-}
-
-.card__but {
+.order__item-btn {
+  margin: 0 auto;
+  display: block;
   background: none;
   margin-top: 12px;
   display: block;
   border: 1px solid #32120d;
-}
-
-.card__but__txt {
   padding: 11px 33px 8px 34px;
   font-family: "Helvetica";
   font-style: normal;
@@ -225,9 +232,18 @@ table {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #32120d;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.card__list {
+.order__item-btn:active {
+  border: 1px solid #f80404;
+  color: #f80404;
+}
+
+.order__btn {
+  margin: 0 auto;
+  display: block;
   margin-top: 30px;
   padding: 17px 39px 12px 40px;
   background: #32120d;
@@ -241,20 +257,83 @@ table {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #ffffff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.order__btn:active {
+  border: 1px solid #f80404;
+  color: #f80404;
 }
 
 .line {
   margin-top: 40px;
   margin-bottom: 40px;
-  width: 600px;
+  width: 100%;
   height: 1px;
   background: #dcdcdc;
 }
 
-.icon {
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (max-width: 840px) {
+  .order__item-name {
+    display: none;
+  }
+  .order__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .order__list img {
+    margin-bottom: 30px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .order__list img:first {
+    margin-top: 0;
+  }
+  .order__title {
+    margin-right: auto;
+    margin-left: auto;
+    width: 360px;
+  }
+}
+
+.icons__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 40px;
+}
+
+.icon {
+  margin-right: 32.5px;
+  width: 25px;
+  height: 25px;
+}
+
+.icon:first-child {
+  margin-right: 38.94px;
+  width: 10.23px;
+  height: 22px;
+}
+
+.icon:last-child {
+  margin-right: 0px;
+  width: 26.67px;
+  height: 15px;
 }
 
 .txt {
@@ -283,6 +362,12 @@ table {
 }
 
 .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: "Helvetica";
   font-style: normal;
   font-weight: 400;
@@ -296,5 +381,10 @@ table {
 
 .link a {
   color: #beb1ae;
+  margin-right: 55px;
+}
+
+.link a:last-child {
+  margin-right: 0;
 }
 /*# sourceMappingURL=style.css.map */

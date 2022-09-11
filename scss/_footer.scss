@@ -1,7 +1,26 @@
-.icon {
-  margin-left: auto;
-  margin-right: auto;
+.icons__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 40px;
+}
+
+.icon {
+  margin-right: 32.5px;
+  width: 25px;
+  height: 25px;
+}
+
+.icon:first-child {
+  margin-right: 38.94px;
+  width: 10.23px;
+  height: 22px;
+}
+
+.icon:last-child {
+  margin-right: 0px;
+  width: 26.67px;
+  height: 15px;
 }
 
 .txt {
@@ -29,7 +48,9 @@
 }
 
 .link {
-      font-family: "Helvetica";
+  display: flex;
+  justify-content: center;
+  font-family: "Helvetica";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -40,6 +61,10 @@
 
   a {
     color: #beb1ae;
-    
+    margin-right: 55px;
+  }
+
+  a:last-child{
+    margin-right: 0;
   }
 }

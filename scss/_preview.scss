@@ -8,6 +8,8 @@
     background-image: url(../img/fon.png);
     background-repeat: no-repeat;
     height: 823px;
+    background-position: center center;
+
 
     &__logo {
       padding-top: 27px;
@@ -44,10 +46,8 @@
       margin: 0 auto;
       display: block;
       margin-top: 21px;
+      cursor: pointer;
       border: 1px solid #ffffff;
-    }
-
-    &__buttxt {
       padding: 17px 36px 12px;
       font-family: "Helvetica";
       font-style: normal;
@@ -58,6 +58,14 @@
       letter-spacing: 0.05em;
       text-transform: uppercase;
       color: #ffffff;
+      transition: all 0.3s ease;
     }
+
+
+    &__but:active {
+            border: 1px solid #f80404;
+            color: #f80404;
+    }
+
   }
 }

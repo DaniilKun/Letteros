@@ -1,4 +1,4 @@
-.card {
+.order {
   &__title {
     margin-top: 40px;
     margin-bottom: 30px;
@@ -9,18 +9,24 @@
     line-height: 120%;
     text-align: center;
     color: #242322;
+    // @media (max-width:840px) {
+    //     color: red;
+    // }
   }
 
-  &__cards {
+  &__list {
     display: flex;
+    justify-content: space-around;
   }
 
-  &__card1 {
-    max-width: 261px;
-    margin-right: 18px;
+  &__item:not(:last-child) {
+    @media (max-width: 840px) {
+        margin-bottom: 30px;
+      }
   }
 
-  &__name {
+
+  &__item-name {
     margin-top: 10px;
     font-family: "Helvetica";
     font-style: normal;
@@ -29,21 +35,20 @@
     line-height: 28px;
     text-align: center;
     color: #242322;
-
-    &__info {
-      width: 247px;
-      margin-top: 16px;
-      font-family: "Helvetica";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
-      text-align: center;
-      color: #5a5a5a;
-    }
   }
 
-  &__price1 {
+  &__item-info {
+    margin-top: 16px;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #5a5a5a;
+  }
+
+  &__item-price {
     margin-top: 18px;
     font-family: "Helvetica";
     font-style: normal;
@@ -54,38 +59,34 @@
     color: #242322;
   }
 
-  &__price2 {
-    margin-top: 18px;
-    font-family: "Helvetica";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    color: #939393;
-  }
-
-  &__but {
+  &__item-btn {
+    margin: 0 auto;
+    display: block;
     background: none;
     margin-top: 12px;
     display: block;
     border: 1px solid #32120d;
-
-    &__txt {
-      padding: 11px 33px 8px 34px;
-      font-family: "Helvetica";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 16px;
-      text-align: center;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: #32120d;
-    }
+    padding: 11px 33px 8px 34px;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #32120d;
+    transition: all 0.3s ease;
   }
 
-  &__list {
+  &__item-btn:active {
+    border: 1px solid #f80404;
+    color: #f80404;
+  }
+
+  &__btn {
+    margin: 0 auto;
+    display: block;
     margin-top: 30px;
     padding: 17px 39px 12px 40px;
     background: #32120d;
@@ -99,13 +100,49 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #ffffff;
+    transition: all 0.3s ease;
+  }
+
+  &__btn:active {
+    border: 1px solid #f80404;
+    color: #f80404;
   }
 }
 
 .line {
   margin-top: 40px;
   margin-bottom: 40px;
-  width: 600px;
+  width: 100%;
   height: 1px;
   background: #dcdcdc;
+}
+
+@media screen and (max-width: 840px) {
+  .order {
+    &__item-name {
+      display: none;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      img {
+        margin-bottom: 30px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      img:first {
+        margin-top: 0;
+      }
+    }
+
+    &__title {
+      margin-right: auto;
+      margin-left: auto;
+      width: 360px;
+    }
+  }
 }
