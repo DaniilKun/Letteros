@@ -1,0 +1,62 @@
+.section {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: rgb(236, 15, 15);
+
+  .preview {
+    background-image: url(../img/fon.png);
+    background-repeat: no-repeat;
+    height: 823px;
+
+    &__logo {
+      padding-top: 27px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 120px;
+      height: 90.57px;
+    }
+
+    &__sublogo {
+      padding-top: 168.43px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 193px;
+      height: 67px;
+    }
+
+    &__txt {
+      margin-top: 36px;
+      font-family: "Helvetica";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 57px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+
+    &__but {
+      background: none;
+      margin: 0 auto;
+      display: block;
+      margin-top: 21px;
+      border: 1px solid #ffffff;
+    }
+
+    &__buttxt {
+      padding: 17px 36px 12px;
+      font-family: "Helvetica";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  }
+}
